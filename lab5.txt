@@ -1,0 +1,108 @@
+ECOR 1051 Lab 5 Solution Template
+
+Author: Nathan MacDiarmid
+
+This file is to be used in conjunction with the detailed lab description for Lab 5
+Use this file to enter your answers to the series of exercises you will complete.
+
+==========
+
+Exercise 1: Single or Double Quotes - Does it matter?
+
+Example, "haven't" or '"Spam, spam, spam," he said.'
+
+>>> type('Hello')
+
+String class
+
+>>> type("goodbye")
+
+String class
+
+>>> 'This is a string'
+
+'This is a string'
+
+>>> ""     (An empty string - type two quotes with no spaces between them.)
+
+''
+
+>>> '"Spam, spam, spam," he said.'
+
+'"Spam, spam, spam," he said.'
+
+>>> "I haven't a clue" 
+
+"I haven't a clue"
+
+>>> 'I haven't a clue' 
+
+Syntax Error
+
+Concluding Questions: Generally, either double or single quotes works well but can you give a scenario where one is better than the other?
+
+When there is an apostrophe in the string that you are typing, because it is another command within Python.
+
+==================
+
+Exercise 2: What operations are permitted with values of type str?
+
+When used with strings, + is the concatenation operator. 
+
+>>> 'Hello, ' + 'world!'
+
+'Hello, world!'
+
+When used with strings, * is the replication operator.
+
+>>> "Spam" * 3
+
+'SpamSpamSpam'
+
+>>> 3 * "Spam"
+
+'SpamSpamSpam'
+
+>>> "Spam" * 0
+
+''
+
+>>> "Spam" * -3
+
+''
+
+There are other operators to try now: - and /
+
+>>> "Hello" - "He"
+
+Typer Error, unsupported, doesn't work.
+
+>>> 'Spam' / 3
+
+Type Error, unsupported, doesn't work.
+
+
+Concluding Questions: What operators work with strings?  Does the order of operands matter?
+
+Only operators that increase the character count inside the string will work. As well, if you use a number that is x<=0, it will just give back an empty string. No, the order does not matter.
+
+=======================
+
+Exercise 3 : Understand the string representation
+
+Is  the string '123' the same as the integer 123? 
+
+>>> '123' + 456
+
+Type Error, can only addition either two int or two strings, but not one of each.
+
+>>> '123' + '456'
+
+123456
+
+Concluding Question: When a string looks like a number, is it a number or a string?
+
+It is a string and can't be added to a number.
+
+=========
+Last edited: January 20, 2020

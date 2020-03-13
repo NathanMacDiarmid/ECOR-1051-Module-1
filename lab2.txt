@@ -1,0 +1,145 @@
+ECOR 1051 Lab 2 Solution Template
+
+Author: Nathan MacDiarmid
+
+This file is to be used in conjunction with the detailed lab description for Lab 2.
+Use this file to enter your answers to the series of exercises you will complete.
+
+==========
+Exercise 1 
+
+What is the name of the frame containing variable "area_of_disk"?
+
+Local frame or function frame.
+
+What does variable "area_of_disk" refer to?
+
+The function that was defined previously in the coding.
+
+What is the name of the frame containing parameter "radius"?
+
+Local frame or function frame.
+
+When does the frame appear in the memory diagram?
+
+When the function is called upon with an input value.
+
+What is the type and value of the variable "radius"? Where did that value come from?
+
+The type of the variable "radius" is a float ( can also insert an integer), and the value is 5.0.  The value was inserted by the person writing the code.
+
+How does PyTutor depict the value the function will return?
+
+When the function is called up, PyTutor will then store the radius as the inputed value and then return the expression that is defined inside the function. Which in this case was "return math.pi * radius ** 2", replacing the argument that was stored into the radius, returning that expression. And then I
+
+"Return value"
+
+When does the frame containing "radius" disappear?
+
+In the local frame, when it appears, storing the number inputed for the space "radius".
+
+What is the name of the frame containing the variable "area"? 
+
+Global frame.
+
+When does "area" appear in the frame?
+
+At the very end, after the function is called upon, and the return value is stored inside the variable "area".
+
+What is the type and value of "area"? Where did that value come from?
+
+The type of the area is a float. The value is 78.5398. It comes from when the function was called and executed and then stored inside the variable "area".
+
+
+==========
+Exercise 2 
+
+What value does "area_of_disk" return each time it is called?
+
+area_of_disk returns 78.5398 every time it is called upon when the argument value for the "radius" is 5.0. Because you can have an expression inside an argument, and the area_of_disk function is the same, even if it was redefined with the argument "r" inside the the function, it calls upon the function with the argument "radius". So this redefinment of the function does not mean anything unless it is edited inside the definition of the function.
+
+==========
+Exercise 3
+
+What is the name of the frame containing parameters "inner" and "outer"?
+
+area_of_ring, the local frame or function frame.
+
+When does the frame appear in the memory diagram?
+
+After it executes the 6th line of code (area = area_of_ring(10.0, 5.0)
+
+What are the types and values of the variables "inner" and "outer"? 
+
+The types are floats and the values are 5.0 and 10.0 respectively.
+
+What caused those values to be bound to "inner" and "outer"?
+
+The function was defined as area_of_ring(outer, inner), which when called upon with inputted arguments (line 6) those values became bound to the "inner" and "outer" parameters.
+
+What is the name of the frame containing parameter "radius"? 
+
+area_of_disk, a local frame, or the function frame.
+
+When does that frame appear in the memory diagram? How many times does it appear?
+
+When it reads the definition of the area_of_disk function (line 4).
+
+Each time the frame containing "radius" appears, what is the type and value bound to "radius"? 
+What caused that value to be bound to "radius"?
+
+The type of the argument bound to "radius" is a float, and the value is 10.0. The values that are bound to "radius" are inputted when they are assigned to "inner" and "outer", because the "radius" argument is linked to area_of_ring function, because its asking to return the area_of_disk(outer), where "outer" is what was inputted when the function was called, the "outer" is replacing the "radius", inputting that value into the function.
+
+When does the frame containing "radius" disappear?
+
+When the area of the inner and outer disk was executed and calculated and stored in "outer" and "inner".
+
+When does the frame containing "inner" and "outer" disappear?
+
+When the function area_of_ring gives a return value and is stored in the variable "area".
+
+What is the name of the frame containing the variable "area"? 
+
+The global frame.
+
+When does "area" appear in the frame?
+
+After both functions are done executing, and the final line of code is read.
+
+What is the type and value of the variable "area"? What caused that
+value to be bound to "area"?
+
+The types float, and the value is 235.6194. We assigned the function area_of_ring to the variable "area", which is why the value is bound to "area".
+
+
+==========
+Exercise 4 
+
+What is the type and value of the object returned by the function when there is
+no return statement?
+
+None
+
+
+==========
+Exercise 5
+
+When "cube" is called, but before Python executes x = x ** 3, what value is
+bound to parameter "x"? What value is bound to variable "a"?
+
+x = 2
+a = 2
+
+After Python executes x = x ** 3, but before the function returns, what value
+is bound to parameter "x"? What value is bound to variable "a"?
+
+x = 8
+a = 2
+
+In Python code, does assigning a value to a function's parameter change the 
+corresponding function argument?
+
+Yes.
+
+==========
+Last edited: 7 Jan. 2020
